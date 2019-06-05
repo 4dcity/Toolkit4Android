@@ -1,19 +1,32 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
+def version = '0.0.0-Java'
+def artifact = 'Android'
 android {
     compileSdkVersion 28
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 28
         versionCode 1
-        versionName "1.0.0"
+        versionName "${version}"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'proguard-rules.pro'
     }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
+            zipAlignEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+}
+publish {
+    userOrg = 'aigestudio'
+    groupId = 'com.aigestudio.toolkit'
+    artifactId = "${artifact}"
+    publishVersion = "${version}"
+    desc = 'Toolkit library for Android'
+    website = 'https://github.com/AigeStudio/Toolkit4Android'
 }
 dependencies {
     testImplementation 'junit:junit:4.12'
