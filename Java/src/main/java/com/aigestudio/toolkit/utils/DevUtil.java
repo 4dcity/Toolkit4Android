@@ -1,4 +1,4 @@
-package com.aigestudio.toolkit.android.utils;
+package com.aigestudio.toolkit.utils;
 
 import android.content.Context;
 import android.graphics.Point;

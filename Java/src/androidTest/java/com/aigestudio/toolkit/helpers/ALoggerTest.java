@@ -1,11 +1,10 @@
-package com.aigestudio.toolkit.android.helpers;
+package com.aigestudio.toolkit.helpers;
 
 import android.Manifest;
 import android.os.Environment;
 import android.support.test.InstrumentationRegistry;
 import android.support.test.rule.GrantPermissionRule;
 import android.support.test.runner.AndroidJUnit4;
-import com.aigestudio.toolkit.android.helpers.ALogger;
 import com.aigestudio.toolkit.helpers.logger.Logger;
 import org.junit.Assert;
 import org.junit.Rule;
