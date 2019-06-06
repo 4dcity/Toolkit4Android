@@ -1,6 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.novoda.bintray-release'
-def version = '0.0.0-Java'
+def version = '0.0.1-Java'
 def artifact = 'Android'
 android {
     compileSdkVersion 28
@@ -33,6 +33,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test:rules:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    androidTestImplementation 'com.aigestudio.toolkit:Java:0.0.0'
-    compileOnly 'com.aigestudio.toolkit:Java:0.0.0'
+    androidTestImplementation 'com.aigestudio.toolkit:Java:0.0.2'
+    compileOnly 'com.aigestudio.toolkit:Java:0.0.2'
 }
