@@ -49,7 +49,7 @@ public final class ALogger extends Logger {
     }
 
     public final void d(final String tag, final Object msg) {
-        if (configuration.logout) Log.v(tag, msg.toString());
+        if (configuration.logout) Log.d(tag, msg.toString());
         if (null != configuration.file) store("D", tag, configuration.file, msg.toString());
     }
 
@@ -58,7 +58,7 @@ public final class ALogger extends Logger {
     }
 
     public final void i(final String tag, final Object msg) {
-        if (configuration.logout) Log.v(tag, msg.toString());
+        if (configuration.logout) Log.i(tag, msg.toString());
         if (null != configuration.file) store("I", tag, configuration.file, msg.toString());
     }
 
@@ -67,7 +67,7 @@ public final class ALogger extends Logger {
     }
 
     public final void w(final String tag, final Object msg) {
-        if (configuration.logout) Log.v(tag, msg.toString());
+        if (configuration.logout) Log.w(tag, msg.toString());
         if (null != configuration.file) store("W", tag, configuration.file, msg.toString());
     }
 
@@ -76,7 +76,7 @@ public final class ALogger extends Logger {
     }
 
     public final void e(final String tag, final Object msg) {
-        if (configuration.logout) Log.v(tag, msg.toString());
+        if (configuration.logout) Log.e(tag, msg.toString());
         if (null != configuration.file) store("E", tag, configuration.file, msg.toString());
     }
 
