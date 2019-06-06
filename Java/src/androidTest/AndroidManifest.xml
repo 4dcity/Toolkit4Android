@@ -1,3 +1,3 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.aigestudio.toolkit">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.aigestudio.toolkit.android">
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 </manifest>

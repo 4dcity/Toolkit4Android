@@ -1,4 +1,4 @@
-package com.aigestudio.toolkit.helpers;
+package com.aigestudio.toolkit.android.helpers;
 
 import android.os.Process;
 import android.util.Log;
